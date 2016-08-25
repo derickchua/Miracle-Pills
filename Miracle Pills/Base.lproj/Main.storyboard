@@ -85,7 +85,7 @@
                                     <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfB-jf-J8a"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jk0-jB-pUj">
+                            <pickerView hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jk0-jB-pUj">
                                 <frame key="frameInset" minX="36" minY="409" height="118" maxX="36"/>
                             </pickerView>
                         </subviews>
