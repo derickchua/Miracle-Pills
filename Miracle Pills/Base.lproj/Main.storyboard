@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,22 +35,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrR-5b-rf0">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7nw-FJ-jUC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FULL NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fom-T4-o5H">
+                                <frame key="frameInset" minX="36" minY="167" width="303" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTH-ii-7vu">
+                                <frame key="frameInset" minX="36" minY="196" width="303" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rrR-5b-rf0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="6fs-JD-MQ7"/>
                             <constraint firstItem="uHt-j5-4UW" firstAttribute="top" secondItem="Im6-B1-26S" secondAttribute="bottom" constant="8" id="7Vf-wY-wgP"/>
                             <constraint firstItem="suF-Pf-kFj" firstAttribute="centerX" secondItem="uHt-j5-4UW" secondAttribute="centerX" id="IEz-xG-Pd8"/>
-                            <constraint firstItem="Im6-B1-26S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="RdV-Cu-Acg"/>
+                            <constraint firstItem="rrR-5b-rf0" firstAttribute="top" secondItem="suF-Pf-kFj" secondAttribute="bottom" constant="8" id="RLf-Mh-gqZ"/>
                             <constraint firstItem="Im6-B1-26S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SgI-uA-AYv"/>
                             <constraint firstItem="uHt-j5-4UW" firstAttribute="centerX" secondItem="Im6-B1-26S" secondAttribute="centerX" id="TIO-O9-odf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rrR-5b-rf0" secondAttribute="trailing" constant="20" id="ZDS-Ex-0GE"/>
                             <constraint firstItem="Im6-B1-26S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="p7H-Nh-2Xd"/>
                             <constraint firstItem="suF-Pf-kFj" firstAttribute="top" secondItem="uHt-j5-4UW" secondAttribute="bottom" constant="3" id="tOg-C2-LAb"/>
+                            <constraint firstItem="rrR-5b-rf0" firstAttribute="centerX" secondItem="suF-Pf-kFj" secondAttribute="centerX" id="tbE-kw-Gch"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
+            <point key="canvasLocation" x="135.5" y="138.5"/>
         </scene>
     </scenes>
     <resources>
